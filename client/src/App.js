@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, useContext } from 'react';
+import ReactBigCalendar from './ReactBigCalendar';
 
 
 import { Container, Row, Col } from 'react-bootstrap'
@@ -9,13 +10,7 @@ function App() {
   
   return (
     <React.Fragment>
-    <Container className="h-100 d-flex flex-cols">
-      <CalendarHeader />
-      <div className='d-flex flex-fill'>
-        <Sidebar />
-        <Month month={currentMonth}/>
-      </div>
-    </Container>
+    <ReactBigCalendar />
     </React.Fragment>
   );
 }
